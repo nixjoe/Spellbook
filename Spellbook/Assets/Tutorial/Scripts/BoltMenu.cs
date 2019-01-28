@@ -14,7 +14,7 @@ public class BoltMenu : Bolt.GlobalEventListener
         {
             // START SERVER
 
-            
+            //127.0.0.1
             BoltLauncher.StartServer();
             BoltNetwork.EnableLanBroadcast();
         }

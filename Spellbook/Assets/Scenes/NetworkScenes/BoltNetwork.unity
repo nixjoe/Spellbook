@@ -427,5 +427,17 @@ PrefabInstance:
       propertyPath: _sceneGuid
       value: 26974e82-c54f-41e4-b884-e10052e7cf05
       objectReference: {fileID: 0}
+    - target: {fileID: 119, guid: a09b2ba41a6c2c74ba348d4028f7c789, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 121, guid: a09b2ba41a6c2c74ba348d4028f7c789, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146, guid: a09b2ba41a6c2c74ba348d4028f7c789, type: 3}
+      propertyPath: _sceneGuid
+      value: 77080b38-cf0c-452b-a5b3-2f69dc05c3da
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09b2ba41a6c2c74ba348d4028f7c789, type: 3}

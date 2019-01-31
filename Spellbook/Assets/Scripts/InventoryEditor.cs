@@ -30,7 +30,7 @@ public class InventoryEditor : Editor
         EditorGUILayout.BeginVertical(GUI.skin.box);
         EditorGUI.indentLevel++;
 
-        showItemSlots[index] = EditorGUILayout.Foldout(showItemSlots[index], "Item slot ", + index);
+        showItemSlots[index] = EditorGUILayout.Foldout(showItemSlots[index], "Item slot " + index);
         if(showItemSlots[index])
         {
             EditorGUILayout.PropertyField(itemImagesProperty.GetArrayElementAtIndex(index));

@@ -11,13 +11,13 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Item itemToAdd)
     {
-        for(int i = 0; i < items.Length; ++i
+        for(int i = 0; i < items.Length; ++i)
         {
             if(items[i] == null)
             {
                 items[i] = itemToAdd;
-                itemImages[i].sprite = itemToAdd.sprite;
-                itemImages[i].enabled = true;
+                //itemImages[i].sprite = itemToAdd.sprite;
+                //itemImages[i].enabled = true;
                 return;
             }
         }
@@ -36,4 +36,7 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+}
+
+public class Item {
 }

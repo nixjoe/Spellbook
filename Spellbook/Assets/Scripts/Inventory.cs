@@ -1,42 +1,60 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public Image[] itemImages = new Image[numItemSlots];
-    public Item[] items = new Item[numItemSlots];
-    public const int numItemSlots = 4;
+    #region Singleton
 
-    public void AddItem(Item itemToAdd)
+    public static Inventory instance;
+
+    private void Awake() 
     {
-        for(int i = 0; i < items.Length; ++i)
+        if(instance != null)
         {
-            if(items[i] == null)
-            {
-                items[i] = itemToAdd;
-                //itemImages[i].sprite = itemToAdd.sprite;
-                //itemImages[i].enabled = true;
-                return;
-            }
+            Debug.LogWarning("More than one instance of Inventory found!");
+            return;
         }
+        instance = this;
     }
 
-    public void RemoveItem(Item itemToRemove)
+    #endregion
+
+    public delegate void OnItemChanged();
+    public OnItemChanged onItemChangedCallback;
+
+    public int space = 15;
+
+    public List<Item> items = new List<Item>();
+
+    public bool Add(Item item)
     {
-        for(int i = 0; i < items.Length; ++i)
+        if(!item.isDefaultItem) 
         {
-            if(items[i] == itemToRemove)
+            if(items.Count >= space)
             {
-                items[i] = null;
-                itemImages[i].sprite = null;
-                itemImages[i].enabled = false;
-                return;
+                Debug.Log("Inventory is full.");
+                return false;
             }
+            items.Add(item);
+
+            if(onItemChangedCallback != null)
+            {
+                onItemChangedCallback.Invoke();
+            }
+            
+        }
+        return true;
+    }
+
+    // Update is called once per frame
+    public void Remove(Item item)
+    {
+        items.Remove(item);
+
+        if (onItemChangedCallback != null)
+        {
+            onItemChangedCallback.Invoke();
         }
     }
-}
-
-public class Item {
 }

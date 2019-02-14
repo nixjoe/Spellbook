@@ -26,6 +26,13 @@ public class Inventory : MonoBehaviour
     public int space = 15;
 
     public List<Item> items = new List<Item>();
+    public Item dummyItem;  //For demo purposes.
+
+    public void onClickAddItem()
+    {
+        Debug.Log("on click");
+        Add(dummyItem);
+    }
 
     public bool Add(Item item)
     {

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2716c8eaaa96640a214b70651125dd, type: 3}
   m_Name: TestItem
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Scroll
+  icon: {fileID: 21300000, guid: e530530e32f1bbc408a1e7e8ae6a1db5, type: 3}
   isDefaultItem: 0

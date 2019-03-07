@@ -54,7 +54,6 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
-    // Update is called once per frame
     public void Remove(Item item)
     {
         items.Remove(item);

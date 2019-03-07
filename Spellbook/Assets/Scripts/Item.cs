@@ -5,5 +5,8 @@ public class Item : ScriptableObject
 {
     new public string name = "New Item";
     public Sprite icon;
+    public int cost;
+    public string flavor;
+    public string mechanics;
     public bool isDefaultItem = false;
 }

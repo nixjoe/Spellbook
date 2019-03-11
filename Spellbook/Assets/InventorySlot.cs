@@ -32,10 +32,9 @@ public class InventorySlot : MonoBehaviour
         Inventory.instance.Remove(item);
     }
 
-    public void Identify(Item item) 
+    public void IdentifyItem() 
     {
-        Debug.Log(item.flavor);
-        Debug.Log(item.mechanics);
+        Inventory.instance.Identify(item);
     }
 
 }

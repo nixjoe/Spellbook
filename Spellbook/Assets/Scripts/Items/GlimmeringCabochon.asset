@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d2716c8eaaa96640a214b70651125dd, type: 3}
-  m_Name: TestItem
+  m_Name: GlimmeringCabochon
   m_EditorClassIdentifier: 
-  name: Scroll
-  icon: {fileID: 21300000, guid: e530530e32f1bbc408a1e7e8ae6a1db5, type: 3}
+  name: Glimmering Cabochon
+  icon: {fileID: 0}
   image: {fileID: 0}
-  buyPrice: 1337
-  sellPrice: 69
-  flavorDescription: Flavor
-  mechanicsDescription: Mechanics
+  buyPrice: 200
+  sellPrice: 100
+  flavorDescription: Magical fire burns just beneath the surface of this peculiar
+    jewel.
+  mechanicsDescription: When equipped, the next spell cast by the player is instead
+    stored in the Hollow Cabochon, turning it into a Glimmering Cabochon infused with
+    that spell.
   isDefaultItem: 0

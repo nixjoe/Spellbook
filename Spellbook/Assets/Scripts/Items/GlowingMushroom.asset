@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d2716c8eaaa96640a214b70651125dd, type: 3}
-  m_Name: New Item
+  m_Name: GlowingMushroom
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
-  cost: 0
+  name: Glowing Mushroom
+  icon: {fileID: 21300000, guid: a04e53dddee26bf459373b24743a5d14, type: 3}
+  image: {fileID: 0}
+  buyPrice: 125
+  sellPrice: 100
+  flavorDescription: Can probably be sold to someone for a high price.
+  mechanicsDescription: Heals 1/4 damage.
   isDefaultItem: 0

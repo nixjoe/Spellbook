@@ -63,4 +63,11 @@ public class Inventory : MonoBehaviour
             onItemChangedCallback.Invoke();
         }
     }
+
+    public void Identify(Item item) 
+    {
+        Debug.Log("Testing code.");
+        Debug.Log(item.flavorDescription);
+        Debug.Log(item.mechanicsDescription);
+    }
 }
